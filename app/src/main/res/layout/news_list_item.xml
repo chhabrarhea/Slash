@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/colorCardBackground"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp">
+
+        <FrameLayout
+            android:id="@+id/element"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="18dp"
+                android:background="@color/colorCardBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:transitionName="newsFeedTitle"
+                    android:padding="8dp"
+                    android:id="@+id/titleTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextBlack"
+                    android:typeface="sans" />
+
+
+                <TextView
+                    android:padding="12dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/titleDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp"
+                    android:textColor="@color/colorTextGrey"
+                    />
+
+
+                <TextView
+                    android:paddingTop="6dp"
+                    android:paddingEnd="6dp"
+                    android:paddingBottom="2dp"
+                    android:paddingStart="12dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/readMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:textColor="@color/colorBlueLight"
+                    />
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

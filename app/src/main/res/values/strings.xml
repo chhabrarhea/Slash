@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Slash</string>
+    <string name="read_more">Read More</string>
+    <string name="api_key">f4da31b7586b481b9f9ffe4bc40aad05</string>
+    <string name="base_url">https://newsapi.org/v2/</string>
+
+</resources>
