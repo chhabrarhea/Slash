@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
 
 
@@ -28,6 +29,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:id="@+id/imageView"
+                    android:contentDescription="@string/news_image" />
                 <TextView
                     android:transitionName="newsFeedTitle"
                     android:padding="8dp"
@@ -36,20 +43,13 @@
                     android:layout_height="wrap_content"
                     android:textSize="21sp"
                     android:textStyle="bold"
+                    tools:text="Here's how coronavirus spread inside a government office in Florida -- and how one official says it stopped - CNN"
                     android:textColor="@color/colorTextBlack"
                     android:typeface="sans" />
 
 
-                <TextView
-                    android:padding="12dp"
-                    android:layout_marginTop="5dp"
-                    android:id="@+id/titleDescription"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
 
-                    android:textSize="16sp"
-                    android:textColor="@color/colorTextGrey"
-                    />
+
 
 
                 <TextView
