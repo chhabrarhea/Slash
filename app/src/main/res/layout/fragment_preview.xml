@@ -1,40 +1,35 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-
-    <RelativeLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.PreviewFragment">
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:background="@color/colorWhite"
-            android:id="@+id/newsListRv"
-            android:clipToPadding="false"
-            android:padding="4dp"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@color/background">
 
-<ProgressBar
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:visibility="gone"
-    tools:visibility="visible"
-    android:id="@+id/progressBar"/>
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:layout_centerInParent="true"
-    android:id="@+id/errorMessage"
-    android:textStyle="bold"
-    android:text="Such Empty!\n Connect to Internet."
-    android:textAlignment="center"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newsListRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="4dp" />
+            <TextView
+                android:id="@+id/errorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="@string/such_empty"
+                android:visibility="invisible" />
 
-    </RelativeLayout>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </layout>

@@ -3,19 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-
-
-
     <androidx.cardview.widget.CardView
-        app:cardElevation="0dp"
-        app:cardBackgroundColor="@color/colorCardBackground"
-        app:cardCornerRadius="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_marginTop="7dp"
-        android:layout_marginBottom="7dp">
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        app:cardBackgroundColor="@color/colorCardBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
 
         <FrameLayout
             android:id="@+id/element"
@@ -23,53 +20,59 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@color/colorCardBackground"
                 android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:padding="18dp">
 
                 <ImageView
+                    android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/news_image"
                     android:padding="8dp"
-                    android:id="@+id/imageView"
-                    android:contentDescription="@string/news_image" />
+                    android:scaleType="fitXY" />
+
                 <TextView
-                    android:transitionName="newsFeedTitle"
-                    android:padding="8dp"
                     android:id="@+id/titleTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="21sp"
-                    android:textStyle="bold"
-                    tools:text="Here's how coronavirus spread inside a government office in Florida -- and how one official says it stopped - CNN"
+                    android:padding="8dp"
                     android:textColor="@color/colorTextBlack"
-                    android:typeface="sans" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:transitionName="newsFeedTitle"
+                    android:typeface="sans"
+                    tools:text="Here's how coronavirus spread inside a government office in Florida -- and how one official says it stopped - CNN" />
 
-
-
-
+                <TextView
+                    android:id="@+id/titleDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:textColor="@color/colorTextGrey"
+                    android:textSize="16sp"
+                    tools:text="Dozens of rescue units are at the scene, with no immediate reports of people injured or trapped." />
 
 
                 <TextView
-                    android:paddingTop="6dp"
-                    android:paddingEnd="6dp"
-                    android:paddingBottom="2dp"
-                    android:paddingStart="12dp"
-                    android:layout_marginTop="1dp"
                     android:id="@+id/readMore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="6dp"
+                    android:paddingBottom="2dp"
                     android:text="@string/read_more"
+                    android:textColor="@color/colorBlueLight"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:typeface="sans"
-                    android:textColor="@color/colorBlueLight"
-                    />
+                    android:typeface="sans" />
 
             </LinearLayout>
-
 
 
         </FrameLayout>

@@ -4,5 +4,6 @@
     <string name="api_key">f4da31b7586b481b9f9ffe4bc40aad05</string>
     <string name="base_url">https://newsapi.org/v2/</string>
     <string name="news_image">newsImage</string>
+    <string name="such_empty">Such Empty!</string>
 
 </resources>

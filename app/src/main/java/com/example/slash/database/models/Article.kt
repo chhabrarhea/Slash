@@ -8,8 +8,9 @@ data class Article (
     @PrimaryKey(autoGenerate = true)
     val id:Int,
     val url:String,
-    val author:String,
+    val description:String?,
+    val author:String?,
     val title:String,
-    val urlToImage:String,
+    val urlToImage:String?,
     val publishedAt:String
     )

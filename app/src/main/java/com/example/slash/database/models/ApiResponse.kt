@@ -1,8 +1,6 @@
 package com.example.slash.database.models
 
-import com.google.gson.annotations.SerializedName
-
-data class Response (
+data class ApiResponse (
     val status:String,
     val totalResults:Int,
     val articles:List<Article>)
